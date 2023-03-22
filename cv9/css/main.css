@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+h1:hover, h2:hover {
+    color: blueviolet;
+}
+
+main {
+    height: 55vh;
+}
+
+main h2 {
+    margin-top: 2em;
+}
+
+p {
+    font-size: 1.5em;
+    padding: 1em 1em;
+}
+
+strong {
+    background-color: black;
+    color: rgb(167, 230, 167);
+    padding: 0.2em;
+}
+
+.ligne {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin: 1em 0;
+
+}
+
+.nav-link {
+    margin: 0 2em;
+    transition: ease-in-out;
+    transition-duration: 0.4s;
+}
+
+#red a:hover {
+    font-size: 1.3em;
+    color: red;
+    background-color: rgb(167, 230, 167);
+    border-radius: 3em;
+    margin: 0;
+    padding: 0.4em 2em;
+}
+
+.central {
+    width: 100vw;
+    height: 90vh;
+}
+
+.scroller { 
+    width: 80%;
+   
+    overflow-y: scroll;
+    scrollbar-3dlight-color: rebeccapurple green;
+    scrollbar-width: thin;
+}
+
+.rond {
+    background-color: red;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+}
+
+.tp {
+    width: 60%;
+    margin: 2em 0;
+}
+
+.tp img {
+    width: 100%;
+}
+
+#presentation, #competences, #formation, #realisations, #contact {
+    margin: 5vh 0 40vh 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#contact a {
+    transition: ease-in-out;
+    transition-duration: 0.4s;
+}
+
+#contact a:hover {
+    font-size: 1.4em;
+    color: green;
+}
+
+
+/*---------------------media queries-----------------------------*/
+
+@media (min-width: 992px){
+
+       
+    h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .tp {
+        width: 40%;
+        margin: 1em;
+       
+    }
+
+
+    #realisations {
+       flex-direction: row;
+       justify-content: center;
+       align-items: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width:992px){
+    p {
+        font-size: 1.5em;
+        padding: 1em 2em;
+    }
+}
+
+@media (min-width: 1200px){
+
+    p {
+        font-size: 1.5em;
+        padding: 1em 5em;
+    }
+}
